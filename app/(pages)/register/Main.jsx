@@ -13,9 +13,14 @@ import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import useLoading from "@/hooks/useLoading";
 import Loading from "@/components/Loading";
+import { IoEye } from "react-icons/io5";
+import { IoMdEyeOff } from "react-icons/io";
+
+
 
 const Main = () => {
   const router = useRouter()
+  const [passwordshow, setPasswordshow] = useState(false);
   const [error, seterror] = useState("");
   const [setshowerror, setSetshowerror] = useState(false);
   const [formData, setFormData] = useState({
@@ -129,14 +134,19 @@ const Main = () => {
                 value={formData.email}
                 onChange={handleChange}
               />
+              <div className=" relative">
               <Input
-                type="password"
+                type={`${!passwordshow ? 'password' : 'text'}`}
                 id="password"
                 name="password"
                 label="Password"
                 value={formData.password}
                 onChange={handleChange}
               />
+              <span onClick={() => setPasswordshow(!passwordshow)} className=" cursor-pointer text-white absolute top-[35%] right-5 text-xl">
+                {passwordshow ? <IoEye className=" "/> : <IoMdEyeOff className=" "/>}
+                </span>
+              </div>
             </div>
             {setshowerror && <div className=" text-red-500">{error}</div>}
             <button
