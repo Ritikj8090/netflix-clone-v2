@@ -34,7 +34,7 @@
     ".next/types/**/*.js",
     "**/*.js",
     "**/*.jsx"
-, "app/api/auth/[...nextauth]/route.js", "app/api/register/route.js", "libs/prismadb.js", "app/(pages)/profiles/Main.jsx", "app/(pages)/profiles/page.jsx", "libs/fetcher.js", "app/api/current/route.js", "libs/serverAuth.js", "components/ProfileCreate.jsx", "hooks/useProfileVisible.js", "app/api/profile/route.js", "components/AccountMenu.jsx", "components/Billboard.jsx", "components/Navbar.jsx", "components/MobileMenu.jsx", "components/NavbarItem.jsx", "hooks/useBillboard.js", "hooks/useInfoModalStore.js", "app/api/random/route.js", "components/MovieCard.jsx", "components/MovieList.jsx", "components/PlayButton.jsx", "components/FavoriteButton.jsx", "hooks/useFavorites.js", "components/InfoModal.jsx", "app/api/favorite/route.js", "app/api/favorites/route.js"  ],
+, "app/api/auth/[...nextauth]/route.ts", "app/api/register/route.js", "libs/prismadb.js", "app/(pages)/profiles/Main.jsx", "app/(pages)/profiles/page.jsx", "libs/fetcher.js", "app/api/current/route.js", "libs/serverAuth.js", "components/ProfileCreate.jsx", "hooks/useProfileVisible.js", "app/api/profile/route.js", "components/AccountMenu.jsx", "components/Billboard.jsx", "components/Navbar.jsx", "components/MobileMenu.jsx", "components/NavbarItem.jsx", "hooks/useBillboard.js", "hooks/useInfoModalStore.js", "app/api/random/route.js", "components/MovieCard.jsx", "components/MovieList.jsx", "components/PlayButton.jsx", "components/FavoriteButton.jsx", "hooks/useFavorites.js", "components/InfoModal.jsx", "app/api/favorite/route.js", "app/api/favorites/route.js"  ],
   "exclude": [
     "node_modules"
   ]
